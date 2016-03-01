@@ -1,52 +1,177 @@
 body {
-  background: #f9e933;
+    margin: 0;
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 }
-
+h5, p {
+    margin: 0;
+    padding-bottom: 5px;
+}
 header, main, footer {
-  min-width: 855px;
+    min-width: 855px;
 }
-
-header .container, main .container, footer .container {
-  max-width: 855px;
-  margin: auto;
-}
-
 header {
-  background: white;
-  overflow: auto;
+    background: white;
+    border-bottom:1px inset dimgray;
+    overflow: auto;
 }
-
-header h1 {
-  float: left;
-  width: 570px;
+footer {
+    background: #f9e933;
+    height: 161px;
 }
-
-header nav {
-  float: right;
-  width: 285px;
-}
-
 main {
-  background: white;
-  overflow: auto;
+    background: white;
+    overflow: auto;
 }
-
+header .container, main .container, footer .container {
+    max-width: 855px;
+    margin: auto;
+}
+footer .container {
+    padding-top: 25px;
+}
+header .container{
+    height: 100px;
+}
+main .container {
+    background: white;
+    height: 380px;
+}
+header .h1 {
+    float: left;
+    width: 570px;
+    align-content: center;
+    color: firebrick;
+    font-style: italic;
+    font-weight: bolder;
+    background: inherit;
+    margin-top: 30px;
+    font-size: 200%;
+}
+header .nav {
+    padding-top: 20px;
+    float: right;
+    width: auto;
+    align-content: center;
+    color: firebrick;
+    margin-top: 10px;
+    background: inherit;
+}
 main .left {
-  float: left;
-  width: 570px;
+    float: left;
+    padding-top: 30px;
+    width: 570px;
 }
-
 main .right {
-  float: right;
-  width: 285px;
+    float: right;
+    width: auto;
 }
-
-footer .left {
-  float: left;
-  width: 570px;
+footer .footer1 {
+    /*padding-top: 25px;*/
+    float: left;
+    width: 570px;
+    /*padding: 0;*/
+    /*background: inherit;*/
 }
-
-footer .sitemap {
-  float: right;
-  width: 285px;
+footer .footer2 {
+    float: right;
+    width: auto;
+    /*background: inherit;*/
+    margin: 0;
+}
+footer .ul1 {
+    float: left;
+    margin:0;
+}
+footer .ul2 {
+    float: right;
+    margin: 0;
+}
+img {
+    padding-top: 25px;
+    height: 320px;
+    width: auto;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    padding-right: 30px;
+}
+h5 {
+    font-weight: bold;
+   /* padding-top: 25px;*/
+    padding-bottom: 20px;
+    font-size: large;
+}
+h3 {
+    font-weight: bold;
+    font-size: 130%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+a {
+    color: firebrick;
+    font-weight: bold;
+}
+.name {
+    color: firebrick;
+    font-style: italic;
+    font-weight: bold;
+}
+h2 {
+    margin:0;
+    font-size: 150%;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.faq1 {
+    width: 50%;
+    margin: auto;
+    float: left;
+}
+.faq2 {
+    width: 50%;
+    margin: auto;
+    float: right;
+}
+.qstn {
+    font-weight: bold;
+}
+.signup1 h2{
+    padding: 38px 25px 20px 25px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    font-style: italic;
+}
+.signup2 {
+    width: 540px;
+    margin: auto;
+    text-align: center;
+}
+#uname, #email, #pwrd {
+    width: 200px;
+    height: 20px;
+    border-radius: 3%;
+}
+input[type=submit] {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding: 3px 0 3px 0;
+    width: 100px;
+    border-radius: 3%;
+    color: firebrick;
+}
+.faq1 li, .faq2 li {
+    padding-bottom: 20px;
+}
+.ul1 li, .ul2 li {
+    padding-bottom: 5px;
+}
+a:visited{
+    color: darksalmon;
+}
+a:hover{
+    color: red;
 }
