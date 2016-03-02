@@ -13,10 +13,15 @@ header {
     background: white;
     border-bottom:1px inset dimgray;
     overflow: auto;
+    height: 100px;
 }
 footer {
     background: #f9e933;
-    height: 161px;
+    min-height: 160px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding-top: 25px;
 }
 main {
     background: white;
@@ -26,15 +31,8 @@ header .container, main .container, footer .container {
     max-width: 855px;
     margin: auto;
 }
-footer .container {
-    padding-top: 25px;
-}
-header .container{
-    height: 100px;
-}
 main .container {
-    background: white;
-    height: 380px;
+    min-height: 380px;
 }
 header .h1 {
     float: left;
@@ -43,9 +41,8 @@ header .h1 {
     color: firebrick;
     font-style: italic;
     font-weight: bolder;
-    background: inherit;
     margin-top: 30px;
-    font-size: 200%;
+    font-size: 250%;
 }
 header .nav {
     padding-top: 20px;
@@ -54,7 +51,6 @@ header .nav {
     align-content: center;
     color: firebrick;
     margin-top: 10px;
-    background: inherit;
 }
 main .left {
     float: left;
@@ -66,16 +62,12 @@ main .right {
     width: auto;
 }
 footer .footer1 {
-    /*padding-top: 25px;*/
     float: left;
     width: 570px;
-    /*padding: 0;*/
-    /*background: inherit;*/
 }
 footer .footer2 {
     float: right;
     width: auto;
-    /*background: inherit;*/
     margin: 0;
 }
 footer .ul1 {
@@ -99,13 +91,12 @@ ul {
 }
 h5 {
     font-weight: bold;
-   /* padding-top: 25px;*/
     padding-bottom: 20px;
-    font-size: large;
+    font-size: 120%;
 }
 h3 {
     font-weight: bold;
-    font-size: 130%;
+    font-size: 170%;
     padding-top: 30px;
     padding-bottom: 10px;
 }
@@ -120,20 +111,20 @@ a {
 }
 h2 {
     margin:0;
-    font-size: 150%;
+    font-size: 200%;
     font-weight: bold;
     padding-top: 30px;
     padding-bottom: 20px;
 }
 .faq1 {
     width: 50%;
-    margin: auto;
     float: left;
+    margin-top: 15px;
 }
 .faq2 {
     width: 50%;
-    margin: auto;
     float: right;
+    margin-top: 15px;
 }
 .qstn {
     font-weight: bold;
