@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 }
-h5, p {
+p {
     margin: 0;
     padding-bottom: 5px;
 }
@@ -93,6 +93,7 @@ h5 {
     font-weight: bold;
     padding-bottom: 20px;
     font-size: 120%;
+    margin: 0;
 }
 h3 {
     font-weight: bold;
@@ -129,8 +130,8 @@ h2 {
 .qstn {
     font-weight: bold;
 }
-.signup1 h2{
-    padding: 38px 25px 20px 25px;
+.signup1 {
+    padding: 8px 25px 20px 25px;
     width: 500px;
     margin: auto;
     text-align: center;
@@ -155,8 +156,8 @@ input[type=submit] {
     color: firebrick;
 }
 .faq1 li, .faq2 li {
-    padding-bottom: 20px;
-}
+     padding-bottom: 20px;
+ }
 .ul1 li, .ul2 li {
     padding-bottom: 5px;
 }
