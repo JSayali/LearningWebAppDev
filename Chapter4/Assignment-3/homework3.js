@@ -1,6 +1,7 @@
 /**
  * Created by SayaliJ on 3/2/2016.
  */
+"use strict";
 
 function display(divnm, result) {
     var ans = document.getElementById(divnm);
