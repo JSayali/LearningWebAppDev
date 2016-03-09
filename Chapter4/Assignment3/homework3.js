@@ -8,7 +8,7 @@ function display(divnm, result) {
 }
 
 /********Write a function that accepts an array of numbers as an argument and returns their average.*****************/
-var avg = function (nums) {
+var exercise1 = function (nums) {
     var sum = 0;
     nums.forEach(function (val) {
         sum = sum + val;
@@ -18,7 +18,7 @@ var avg = function (nums) {
 };
 
 /********Write a function that accepts an array of numbers as an argument and returns the largest number in the array.*/
-var large = function (nums) {
+var exercise2 = function (nums) {
     var largest = nums[0], i;
     for (i = 1; i < nums.length; i += 1) {
         if (largest < nums[i]) {
@@ -30,7 +30,7 @@ var large = function (nums) {
 
 /*******Write a function that accepts an array of numbers and returns true if it contains at least one even number,
  false otherwise.************/
-var oneEven = function (nums) {
+var exercise3 = function (nums) {
     var i;
     for (i = 0; i < nums.length; i += 1) {
         if (nums[i] % 2 === 0) {
@@ -41,7 +41,7 @@ var oneEven = function (nums) {
 };
 
 /********Write a function that accepts an array of numbers and returns true if every number is even, false otherwise.**********/
-var allEven = function (nums) {
+var exercise4 = function (nums) {
     var i;
     for (i = 0; i < nums.length; i += 1) {
         if (nums[i] % 2 !== 0) {
@@ -65,7 +65,7 @@ var arrayContains = function (strings, match) {
 
 /********Write a function that is similar to the previous one, but returns true only if the array contains the
  given string at least twice.**********/
-var array2 = function (strings, match) {
+var arrayContainsTwo = function (strings, match) {
     var res = 0, i;
     for (i = 0; i < strings.length; i += 1) {
         if (strings[i] === match) {
@@ -80,7 +80,7 @@ var array2 = function (strings, match) {
 
 /********Write a function that is similar to the previous one, but returns true only if the array contains the
  given string at least thrice.**********/
-var array3 = function (strings, match) {
+var arrayContainsThree = function (strings, match) {
     var res = 0, i;
     for (i = 0; i < strings.length; i += 1) {
         if (strings[i] === match) {
@@ -136,13 +136,13 @@ var findAllEven = function (nums) {
 
 /***********************************************************************************************************************/
 function assignment3(){
-    display("avg", avg([3,5,35,76,34]));
-    display("max", large([122, 37, 446, 56]));
-    display("oneEven", oneEven([1, 2, 3, 5, 11]));
-    display("allEven", allEven([2, 86, 24, 6, 202]));
+    display("avg", exercise1([3,5,35,76,34]));
+    display("max", exercise2([122, 37, 446, 56]));
+    display("oneEven", exercise3([1, 2, 3, 5, 11]));
+    display("allEven", exercise4([2, 86, 24, 6, 202]));
     display("arrayC", arrayContains(["world", "hi"], "hi"));
-    display("array2", array2(["hello", "welcome", "world", "hello"], "hello"));
-    display("array3", array3(["test", "web", "programming", "web", "web"], "web"));
+    display("array2", arrayContainsTwo(["hello", "welcome", "world", "hello"], "hello"));
+    display("array3", arrayContainsThree(["test", "web", "programming", "web", "web"], "web"));
     display("arrayN", arrayContainsNTimes(["js", "css", "html", "js", "java","js", "ajax", "bootstrap", "js"], "js", 4));
     display("findMax", findMax([1, 2, 343, 4]));
     display("findEven", findEven([79, 555, 47, 63, 44, 23]));
